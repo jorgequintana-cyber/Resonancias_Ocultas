@@ -1,0 +1,5 @@
+{
+  "name": "Resonancias Ocultas",
+  "description": "An interactive web application in the style of a DVD menu to explore different microtonal musical systems like Pythagorean, 12-EDO, 19-EDO, 22-EDO, 31-EDO, and Bohlen-Pierce. Users can listen to scales, chords, and short pieces for each system, as well as read informational panels.",
+  "requestFramePermissions": []
+}
