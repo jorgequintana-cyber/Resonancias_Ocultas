@@ -23,7 +23,8 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
       { name: 'Acorde Menor', intervals: [0, 3, 7] },
     ],
     piece: {
-      name: 'Fragmento Pitagórico',
+      name: 'Bach',
+      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/Pit.mp3',
       noteSequence: [
         { note: 0, duration: 0.5 }, { note: 4, duration: 0.5 }, { note: 7, duration: 0.5 }, { note: 11, duration: 0.5 },
         { note: 12, duration: 1.0 }, { note: 9, duration: 0.5 }, { note: 5, duration: 0.5 }, { note: 2, duration: 1.0 }
@@ -43,6 +44,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Melodía Temperada',
+      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/12EDO.mp3',
       noteSequence: [
         { note: 0, duration: 0.4 }, { note: 2, duration: 0.4 }, { note: 4, duration: 0.4 }, { note: 5, duration: 0.4 },
         { note: 7, duration: 0.8 }, { note: 5, duration: 0.4 }, { note: 4, duration: 0.8 }
@@ -61,7 +63,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Estudio en 19',
-      audioUrl: 'https://mega.nz/file/rbBzRIrB#lIVZTDCQ99wyoWE5GG6O1ucQ1xuRQ0gcBD51XFI1OsI'
+      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/19EDO.mp3'
     }
   },
   {
@@ -75,7 +77,8 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
       { name: 'Tríada Submenor (0-6-15)', intervals: [0, 6, 15] },
     ],
     piece: {
-      name: 'Fantasía Arábiga',
+      name: '22edo',
+      audioUrl: 'https://raw.githubusercontent.com/jorgequintana-cyber/Resonancias_Ocultas/main/22EDO.mp3',
       noteSequence: [
         { note: 0, duration: 0.5 }, { note: 4, duration: 0.25 }, { note: 7, duration: 0.5 }, { note: 10, duration: 0.25 },
         { note: 12, duration: 0.5 }, { note: 15, duration: 0.5 }, { note: 18, duration: 0.5 }, { note: 22, duration: 1.0 }
@@ -93,7 +96,8 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
       { name: 'Acorde Menor Puro', intervals: [0, 8, 18] },
     ],
     piece: {
-      name: 'Invención Mesotónica',
+      name: 'Overjoy',
+      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/31EDO.mp3',
       noteSequence: [
         { note: 0, duration: 0.4 }, { note: 10, duration: 0.4 }, { note: 18, duration: 0.8 }, { note: 23, duration: 0.4 },
         { note: 31, duration: 0.8 }, { note: 28, duration: 0.4 }, { note: 18, duration: 0.8 }
@@ -111,11 +115,8 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
       { name: 'Acorde "Menor" BP', intervals: [0, 3, 7] },
     ],
     piece: {
-      name: 'Viaje a la Tritava',
-      noteSequence: [
-        { note: 0, duration: 0.5 }, { note: 2, duration: 0.5 }, { note: 4, duration: 0.5 }, { note: 6, duration: 0.5 },
-        { note: 8, duration: 0.5 }, { note: 10, duration: 0.5 }, { note: 13, duration: 1.0 }
-      ]
+      name: 'Sevish',
+      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/BPED3.mp3'
     }
   }
 ];

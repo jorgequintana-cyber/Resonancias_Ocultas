@@ -1,7 +1,8 @@
-// Helper function to convert shareable Google Drive links to direct download links
+// Helper function to convert shareable cloud links to direct download links
 const convertToDirectLink = (url: string): string => {
   try {
     const urlObject = new URL(url);
+    // Google Drive
     if (urlObject.hostname === 'drive.google.com') {
       const pathParts = urlObject.pathname.split('/');
       // Find the file ID part of the URL, which is usually after '/d/'
@@ -11,9 +12,24 @@ const convertToDirectLink = (url: string): string => {
         return `https://drive.google.com/uc?export=download&id=${fileId}`;
       }
     }
+    // Dropbox
+    if (urlObject.hostname.includes('dropbox.com')) {
+        urlObject.searchParams.set('raw', '1'); // raw=1 gives direct file access
+        return urlObject.toString();
+    }
+    // GitHub blob links
+    if (urlObject.hostname === 'github.com') {
+      const pathParts = urlObject.pathname.split('/');
+      const blobIndex = pathParts.indexOf('blob');
+      if (blobIndex > -1) {
+          pathParts.splice(blobIndex, 1); // Remove 'blob' from path
+          const newPath = pathParts.join('/');
+          return `https://raw.githubusercontent.com${newPath}`;
+      }
+    }
   } catch (e) {
-    // If URL is invalid or not a Google Drive link, return it as is.
-    console.warn("Could not parse URL or it's not a GDrive link:", url);
+    // If URL is invalid or not a supported cloud link, return it as is.
+    console.warn("Could not parse URL or it's not a supported cloud link:", url);
     return url;
   }
   return url;
@@ -42,6 +58,10 @@ class AudioService {
   private getContext(): AudioContext | null {
     if (!this.audioContext) {
       this.initialize();
+    }
+    // Resume context if it was suspended by the browser (common practice)
+    if (this.audioContext && this.audioContext.state === 'suspended') {
+        this.audioContext.resume();
     }
     return this.audioContext;
   }
