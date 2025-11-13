@@ -24,7 +24,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Bach',
-      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/Pit.mp3',
+      audioUrl: 'https://raw.githubusercontent.com/jorgequintana-cyber/Resonancias_Ocultas/main/Pit.mp3',
       noteSequence: [
         { note: 0, duration: 0.5 }, { note: 4, duration: 0.5 }, { note: 7, duration: 0.5 }, { note: 11, duration: 0.5 },
         { note: 12, duration: 1.0 }, { note: 9, duration: 0.5 }, { note: 5, duration: 0.5 }, { note: 2, duration: 1.0 }
@@ -44,7 +44,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Melodía Temperada',
-      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/12EDO.mp3',
+      audioUrl: 'https://raw.githubusercontent.com/jorgequintana-cyber/Resonancias_Ocultas/main/12EDO.mp3',
       noteSequence: [
         { note: 0, duration: 0.4 }, { note: 2, duration: 0.4 }, { note: 4, duration: 0.4 }, { note: 5, duration: 0.4 },
         { note: 7, duration: 0.8 }, { note: 5, duration: 0.4 }, { note: 4, duration: 0.8 }
@@ -63,7 +63,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Estudio en 19',
-      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/19EDO.mp3'
+      audioUrl: 'https://raw.githubusercontent.com/jorgequintana-cyber/Resonancias_Ocultas/main/19EDO.mp3'
     }
   },
   {
@@ -97,7 +97,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Overjoy',
-      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/31EDO.mp3',
+      audioUrl: 'https://raw.githubusercontent.com/jorgequintana-cyber/Resonancias_Ocultas/main/31EDO.mp3',
       noteSequence: [
         { note: 0, duration: 0.4 }, { note: 10, duration: 0.4 }, { note: 18, duration: 0.8 }, { note: 23, duration: 0.4 },
         { note: 31, duration: 0.8 }, { note: 28, duration: 0.4 }, { note: 18, duration: 0.8 }
@@ -116,7 +116,7 @@ export const TUNING_SYSTEMS: TuningSystem[] = [
     ],
     piece: {
       name: 'Sevish',
-      audioUrl: 'https://github.com/jorgequintana-cyber/Resonancias_Ocultas/blob/main/BPED3.mp3'
+      audioUrl: 'https://raw.githubusercontent.com/jorgequintana-cyber/Resonancias_Ocultas/main/BPED3.mp3'
     }
   }
 ];
